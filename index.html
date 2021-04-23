@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/styles/main.css" rel="stylesheet" />
     <title>Formulario - Reto 2</title>
   </head>
   <body>
@@ -11,10 +12,124 @@
       <h1 tittle=""></h1>
       <p id="description"></p>
       <form id="survey-form" action="#">
-          <input type="text" id="name">
-          <input type="text" id="enail">
-          <input type="text" id="number">
-          <input type="text" id="name">
+        <div class="content-form">
+          <label for="name" id="name-label"> Nombre: </label>
+          <input type="text" id="name" class="input" />
+
+          <label for="email" id="email-label"> Email:</label>
+          <input type="text" id="enail" class="input" />
+
+          <label for="number" id="number-label"> Cantidad</label>
+          <input type="number" id="number" min="18" max="99" class="input" />
+
+          <label for="">Ram:</label>
+          <input type="text" id="name" class="input" />
+
+          <label for="">
+            <select class="input" id="dropdown">
+              <option id="op1">Opción 1</option>
+              <option id="op2">Opción 1</option>
+              <option id="op3">Opción 3</option>
+              <option id="op4">Opción 4</option>
+              <option id="op5">Opción 5</option>
+            </select>
+          </label>
+          <div class="radios">
+            <div class="tit_opt">Radios</div>
+            <label for="radio">
+              <input
+                class="input radio"
+                type="radio"
+                name="radio"
+                id="radio"
+              />Opción 1
+            </label>
+            <label for="radio">
+              <input
+                class="input radio"
+                type="radio"
+                name="radio"
+                id="radio"
+              />Opción 2
+            </label>
+            <label for="radio">
+              <input
+                class="input radio"
+                type="radio"
+                name="radio"
+                id="radio"
+              />Opción 3
+            </label>
+            <label for="radio">
+              <input
+                class="input radio"
+                type="radio"
+                name="radio"
+                id="radio"
+              />Opción 4
+            </label>
+            <label for="radio">
+              <input
+                class="input radio"
+                type="radio"
+                name="radio"
+                id="radio"
+              />Opción 5
+            </label>
+          </div>
+
+          <div class="checks">
+            <div class="tit_opt">Checks</div>
+            <label for="check">
+              <input
+                class="input checkbox"
+                type="checkbox"
+                name="check"
+                id="check"
+                value=""
+              />Opción 1
+            </label>
+            <label for="check">
+              <input
+                class="input checkbox"
+                type="checkbox"
+                name="check"
+                id="check"
+                value=""
+              />Opción 2
+            </label>
+            <label for="check">
+              <input
+                class="input checkbox"
+                type="checkbox"
+                name="check"
+                id="check"
+                value=""
+              />Opción 3
+            </label>
+            <label for="check">
+              <input
+                class="input checkbox"
+                type="checkbox"
+                name="check"
+                id="check"
+                value=""
+              />Opción 4
+            </label>
+            <label for="check">
+              <input
+                class="input checkbox"
+                type="checkbox"
+                name="check"
+                id="check"
+                value=""
+              />Opción 5
+            </label>
+          </div>
+          <label><br>Textarea:</label>
+          <textarea class="input area-texto"> </textarea>
+          <input type="submit" id="submit" class="input" />
+        </div>
       </form>
     </div>
   </body>
