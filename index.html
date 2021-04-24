@@ -11,133 +11,181 @@
     <div id="main">
       <h1 tittle=""></h1>
       <p id="description"></p>
-      <form id="survey-form" action="#">
+      <form id="survey-form" method="GET" action="resultado.html">
         <div class="content-form">
           <figure>
-            <img src="assets/img/logo.png" id="logo"/>
+            <img src="assets/img/logo.png" id="logo" />
             <figcaption>
-              <h1 id="titulo">Formulario de inscripción UniGeek</h1>
-              <p id="parrafo">El siguiente formulario será utilizado para recolectar la lista de estudiantes que desean ser admitidos en UniGeek, ingresa los datos solicitados minunciosamente ya que son de vital importancia para poder validar la información correctamente y ponernos en contacto contigo. Gracias.</p>
+              <h1 id="title">Formulario de inscripción UniGeek</h1>
+              <p id="description">
+                El siguiente formulario será utilizado para recolectar la lista
+                de estudiantes que desean ser admitidos en UniGeek, ingresa los
+                datos solicitados minunciosamente ya que son de vital
+                importancia para poder validar la información correctamente y
+                ponernos en contacto contigo. Gracias.
+              </p>
             </figcaption>
           </figure>
-          <label for="name" id="name-label"> Nombre: </label>
-          <input type="text" id="name" class="input" />
+          <label for="name-label" id="name-label"> Nombre Completo: </label>
+          <input
+            type="text"
+            id="name"
+            name="nombre"
+            class="input"
+            placeholder="Ejem: Juan Antonio Perez"
+            required
+          />
 
           <label for="email" id="email-label"> Email:</label>
-          <input type="text" id="enail" class="input" />
+          <input
+            type="email"
+            id="enail"
+            name="email"
+            class="input"
+            placeholder="Ejem: juanperez@gmail.com"
+            required
+          />
 
-          <label for="number" id="number-label"> Cantidad</label>
-          <input type="number" id="number" min="18" max="99" class="input" />
+          <label for="number" id="number-label"> Celular</label>
+          <input
+            type="number"
+            id="number"
+            min="1000000000"
+            max="9999999999"
+            class="input"
+            length="2"
+            placeholder="123456789"
+            name="celular"
+            required
+          />
 
-          <label for="">Ram:</label>
-          <input type="text" id="name" class="input" />
+          <label for="direccion" id="direccion-label">Dirección:</label>
+          <input type="text" id="direccion" class="input" required />
 
-          <label for="">
-            <select class="input" id="dropdown">
-              <option id="op1">Opción 1</option>
-              <option id="op2">Opción 1</option>
-              <option id="op3">Opción 3</option>
-              <option id="op4">Opción 4</option>
-              <option id="op5">Opción 5</option>
-            </select>
-          </label>
+          <label for="dropdown" class="programa-label">Programa al que deseas aplicar:</label          >
+          <select class="input" id="dropdown" name="programa" required>
+            <option id="op1" class="ops" value="ing-sistemas">
+              Ingeniería en Sistemas
+            </option>
+            <option id="op2" class="ops" value="ing-software">
+              Ingeniería de Software
+            </option>
+            <option id="op3" class="ops" value="ing-informatica">
+              Ingeniería Informática
+            </option>
+            <option id="op4" class="ops" value="frontend">
+              Especialización en Frontend
+            </option>
+            <option id="op5" class="ops" value="backend">
+              Diplomado en Backend
+            </option>
+          </select>
+
           <div class="radios">
-            <div class="tit_opt">Radios</div>
-            <label for="radio">
+            <div class="tit_opt">Nivel de Inglés</div>
+            <label for="radio-basico">
               <input
                 class="input radio"
                 type="radio"
-                name="radio"
-                id="radio"
-              />Opción 1
+                name="nv-ingles"
+                id="radio-basico"
+                value="basico"
+              />Básico
             </label>
-            <label for="radio">
+            <label for="radio-intermedio">
               <input
                 class="input radio"
                 type="radio"
-                name="radio"
-                id="radio"
-              />Opción 2
+                name="nv-ingles"
+                id="radio-intermedio"
+                value="intermedio"
+              />Intermedio
             </label>
-            <label for="radio">
+            <label for="radio-avanzado">
               <input
                 class="input radio"
                 type="radio"
-                name="radio"
-                id="radio"
-              />Opción 3
+                name="nv-ingles"
+                id="radio-avanzado"
+                value="avanzado"
+              />Avanzado
             </label>
-            <label for="radio">
+            <label for="radio-experto">
               <input
                 class="input radio"
                 type="radio"
-                name="radio"
-                id="radio"
-              />Opción 4
+                name="nv-ingles"
+                id="radio-experto"
+                value="experto"
+              />Experto
             </label>
-            <label for="radio">
+            <label for="radio-nativo">
               <input
                 class="input radio"
                 type="radio"
-                name="radio"
-                id="radio"
-              />Opción 5
+                name="nv-ingles"
+                id="radio-nativo"
+                value="nativo"
+              />Nativo
             </label>
           </div>
 
           <div class="checks">
-            <div class="tit_opt">Checks</div>
-            <label for="check">
+            <div class="tit_opt">Habilidades:</div>
+            <label for="check-backend">
               <input
-                class="input checkbox"
+                class="check-backend"
                 type="checkbox"
-                name="check"
-                id="check"
-                value=""
-              />Opción 1
+                name="habilidades"
+                id="check-backend"
+                value="backend"
+              />Progración Backend
             </label>
-            <label for="check">
+            <label for="check-frontend">
               <input
                 class="input checkbox"
                 type="checkbox"
-                name="check"
-                id="check"
-                value=""
-              />Opción 2
+                name="habilidades"
+                id="check-frontend"
+                value="frontend"
+              />Progración Frontend
             </label>
-            <label for="check">
+            <label for="check-db">
               <input
                 class="input checkbox"
                 type="checkbox"
-                name="check"
-                id="check"
-                value=""
-              />Opción 3
+                name="habilidades"
+                id="check-db"
+                value="db"
+              />Bases de datos
             </label>
-            <label for="check">
+            <label for="check-server">
               <input
                 class="input checkbox"
                 type="checkbox"
-                name="check"
-                id="check"
-                value=""
-              />Opción 4
+                name="habilidades"
+                id="check-server"
+                value="servidores"
+              />Servidores
             </label>
-            <label for="check">
+            <label for="check-otros">
               <input
                 class="input checkbox"
                 type="checkbox"
-                name="check"
-                id="check"
-                value=""
-              />Opción 5
+                name="habilidades"
+                id="check-otros"
+                value="otros"
+              />Otros
             </label>
           </div>
-          <label><br />Textarea:</label>
-          <textarea class="input area-texto"> </textarea>
+
+          <label for="comentarios" id="comentarios-label"><br />Comentarios:</label>          
+          <textarea class="input area-texto" maxlength="200" name="comentarios" id="comentarios" placeholder="Escribe aquí tu comentario"> </textarea>
+
           <input type="submit" id="submit" class="input" />
         </div>
       </form>
     </div>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

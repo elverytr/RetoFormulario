@@ -1,0 +1,1 @@
+console.log(emailRegex.test("abcde.fghi@gmail.com"));
