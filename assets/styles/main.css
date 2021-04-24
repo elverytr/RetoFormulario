@@ -12,19 +12,19 @@ body {
 #main {
   text-align: center;
 }
-#title{
-    font-size: 3em;
-    line-height: 3rem; 
+#title {
+  font-size: 3em;
+  line-height: 3rem;
 }
-#logo{
-    width: 100px;
-    height: auto;    
+#logo {
+  width: 100px;
+  height: auto;
 }
-#description{
-    text-align: justify;
-    font-size: 1.5rem;
-    margin: 5% 0 5% 0;
-    text-indent: 2.5rem;
+#description {
+  text-align: justify;
+  font-size: 1.5rem;
+  margin: 5% 0 5% 0;
+  text-indent: 2.5rem;
 }
 #survey-form {
   display: inline-block;
@@ -36,27 +36,27 @@ body {
   border-radius: 5px;
   padding: 5%;
 }
-.content-form{
-    display: inline-block;
-    width: 80%;
-    min-width: 300px;
+.content-form {
+  display: inline-block;
+  width: 80%;
+  min-width: 300px;
 }
-label{
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    font-size: 1.5rem;
-  }
-.input{
-    width: 100%;
-    height: 30px;
-    border-radius: 5px;
-    margin: 1%;
-    border: 0px;
-    background-color: rgb(219, 250, 250);
-    font-size: 1.5rem;
-    padding-left: 1%;
-  }
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 1%;
+  border: 0px;
+  background-color: rgb(219, 250, 250);
+  font-size: 1.5rem;
+  padding-left: 1%;
+}
 #dropdown {
   text-align: right;
 }
@@ -64,16 +64,16 @@ label{
   width: 100%;
   margin: 0 0 0 0;
 }
-.tit_opt{    
-    font-size: 20px;
-    text-align: left;
+.tit_opt {
+  font-size: 20px;
+  text-align: left;
 }
-.radios{    
-    display: block;        
-    box-sizing: border-box;
-    margin-top: 5%;
-    width:50%;
-    float:left;
+.radios {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 5%;
+  width: 50%;
+  float: left;
 }
 .radio {
   width: auto;
@@ -81,38 +81,51 @@ label{
   margin: 0px;
   padding: 0px;
 }
-.checks{
-    display: block;    
-    box-sizing: border-box;
-    margin-top: 5%;
-    width:50%;
-    float:left;
+.checks {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 5%;
+  width: 50%;
+  float: left;
 }
-.checkbox{
+.checkbox {
   width: auto;
   height: 20px;
   margin: 0px;
   padding: 0px;
 }
-.ops{
+.ops {
   font-size: 1.5rem;
 }
-.area-texto{
-    width: 100%;
-    height: 80px;
+.area-texto {
+  width: 100%;
+  height: 80px;
 }
-#submit{
-    background-color: rgba(31, 172, 66, 0.719);
-    width: 40%;
+#submit {
+  background-color: rgba(31, 172, 66, 0.719);
+  width: 40%;
 }
-
 
 /* Estilo de la página de resultado */
 
-#content{
-    display: flex;
-    align-items: center;
+#content-ok {
+  width: 100%;
+  background-color: rgb(255, 255, 255);    
+  text-align: center;
 }
-#resultado{
-
+#resultado {
+  margin-top: 20%;
+  width: 100%;
+  text-align: center;
+  
+}
+#resultado h1{
+  display: inline-block;
+  text-align: center; 
+  width: 40%; 
+  color: rgb(255, 255, 255);
+  font-size: 2rem;  
+  background-color: rgb(26, 117, 30);
+  padding: 2%;
+  border-radius: 5px;
 }
